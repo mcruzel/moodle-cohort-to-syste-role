@@ -14,10 +14,8 @@ userid = 0 # doesn't matter
 contextid = 1 # use 1 for system-wide roles
 
 
-
-
 # Import users id from a system cohort
-def import_userid():
+def import_usersid():
     global webservice_reponse_content_py_tableau
     webservice_userid_response_content = url_moodle+"/webservice/rest/server.php?wstoken="+token_ws_cohort_reading+"&wsfunction=core_cohort_get_cohort_members&moodlewsrestformat=json&cohortids[0]="+str(cohortid)
     webservice_reponse_content = requests.get(webservice_userid_response_content)
@@ -38,5 +36,5 @@ def assign_members_to_role():
         webservice_role_assign_post = requests.post(webservice_role_assign)
     print("Travail terminé")    
         
-import_userid()
+import_usersid()
 assign_members_to_role()
