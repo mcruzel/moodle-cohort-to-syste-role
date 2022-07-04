@@ -1,5 +1,5 @@
 # moodle-cohort-to-system-role
-Assign cohort members to a moodle role. Particulary useful for roles system which can't be assigned by bulk users upload.
+Assign cohort members to a moodle role. Particulary useful for system-wide roles which can't be assigned by bulk users upload.
 
 # Cohorts in bulk users upload
 
