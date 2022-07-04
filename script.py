@@ -10,8 +10,8 @@ token_ws_role_assign = "xxxxx"
 url_moodle = "https://xxx"
 cohortid = 0 # cohort members of the cohort whose members will be added to the system role
 roleid = 0 # the id of the role which you want to add members from the aimed cohort
-userid = 0
-contextid = 0
+userid = 0 # doesn't matter
+contextid = 1 # use 1 for system-wide roles
 
 
 
