@@ -13,7 +13,7 @@ This script use the following Moodle's webservices :
 - core_cohort_get_cohort_members
 - core_role_assign_roles
 
-You need to create a [token](https://docs.moodle.org/400/en/Using_web_services) for each one webservices.
+You need to create an [account] (user + password)(https://docs.moodle.org/400/en/Using_web_services) for the webservices.
 
 # Libraries used
 
@@ -24,6 +24,6 @@ This script use the folliwing libraries :
 # Variables
 
 You need to modify the following variables on the script (depends to your context)
-- *token_ws_cohort_reading* and *token_ws_role_assign* : see [this documentation](https://docs.moodle.org/400/en/Using_web_services) for each one webservices. Keep in mind that the two webservices used are : *core_cohort_get_cohort_members* and *core_role_assign_roles*
+- *moodle url*
 - *cohortid* : the cohort (id) whose members will be added to the system role. Check the url of the cohort from the cohorts dashboard for retrieving the cohortid.
 - *roleid* : the id of the role which you want to add members from the aimed cohort. Check the url of the role from the system-wide roles dashboard for retrieving the roleid.
